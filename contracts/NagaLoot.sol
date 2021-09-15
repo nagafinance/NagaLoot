@@ -1677,31 +1677,31 @@ contract NagaLoot is ERC721Enumerable, ReentrancyGuard, Ownable {
         return uint256(keccak256(abi.encodePacked(input)));
     }
     
-    function getBackground(uint256 tokenId) private view returns (string memory) {
+    function getBackground(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "BACKGROUND", backgrounds);
     }
     
-    function getBody(uint256 tokenId) private view returns (string memory) {
+    function getBody(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "BODY", bodys);
     }
     
-    function getCheek(uint256 tokenId) private view returns (string memory) {
+    function getCheek(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "CHEEK", cheeks);
     }
     
-    function getEye(uint256 tokenId) private view returns (string memory) {
+    function getEye(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "EYE", eyes);
     }
 
-    function getMouth(uint256 tokenId) private view returns (string memory) {
+    function getMouth(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "MOUTH", mouths);
     }
     
-    function getHead(uint256 tokenId) private view returns (string memory) {
+    function getHead(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "HEAD", heads);
     }
     
-    function getClothe(uint256 tokenId) private view returns (string memory) {
+    function getClothe(uint256 tokenId) public view returns (string memory) {
         return pluck(tokenId, "CLOTHE", clothes);
     }
     
