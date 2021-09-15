@@ -37,7 +37,7 @@ module.exports = {
       provider: () => new HDWalletProvider(process.env.PK, "https://rinkeby.infura.io/v3/" + process.env.INFURA_API_KEY),
       port: 8545,
       network_id: "4",
-      gas: 60000000,
+      gas: 6000000,
       gasPrice: 40000000000
     },
     avax: {
@@ -61,7 +61,7 @@ module.exports = {
       gasPrice: 0x01      // <-- Use this low gas price
     },
     goerli: {
-      provider: () => new HDWalletProvider(process.env.PK, `https://goerli.infura.io/v3/dd2249cc150347d19ba26f414ddab3f0`),
+      provider: () => new HDWalletProvider(process.env.PK, "https://goerli.infura.io/v3/" + process.env.INFURA_API_KEY),
       network_id: 5,       // Ropsten's id
       gas: 20000000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
